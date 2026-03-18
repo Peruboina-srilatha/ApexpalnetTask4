@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Full Project Implementation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚀 Full Project</h1>
+
+<!-- NAVBAR -->
+<nav>
+  <button onclick="showSection('portfolio')">Portfolio</button>
+  <button onclick="showSection('todo')">To-Do</button>
+  <button onclick="showSection('products')">Products</button>
+</nav>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="active">
+  <h2>👤 Portfolio</h2>
+
+  <input id="name" placeholder="Enter your name"><br>
+  <input id="skills" placeholder="Enter your skills"><br>
+  <input id="email" placeholder="Enter your email"><br>
+
+  <button onclick="saveProfile()">Save Profile</button>
+
+  <h3>Profile Details</h3>
+  <p id="profileOutput"></p>
+</section>
+
+<!-- TODO -->
+<section id="todo">
+  <h2>📝 To-Do App</h2>
+  <input id="taskInput" placeholder="Enter task">
+  <button onclick="addTask()">Add</button>
+  <ul id="taskList"></ul>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <h2>🛒 Products</h2>
+
+  <select onchange="filterProducts(this.value)">
+    <option value="all">All</option>
+    <option value="electronics">Electronics</option>
+    <option value="clothing">Clothing</option>
+  </select>
+
+  <select onchange="sortProducts(this.value)">
+    <option value="">Sort</option>
+    <option value="low">Low Price</option>
+    <option value="high">High Price</option>
+  </select>
+
+  <div id="productList"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
