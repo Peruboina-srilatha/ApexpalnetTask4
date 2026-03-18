@@ -1,0 +1,43 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f0f2f5;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+section {
+  display: none;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.active {
+  display: block;
+}
+
+input {
+  margin: 5px 0;
+  padding: 8px;
+  width: 250px;
+}
+
+#productList div {
+  border: 1px solid #ddd;
+  margin: 5px;
+  padding: 10px;
+}
